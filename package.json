@@ -1,0 +1,19 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "A simple code model designed to manage student information efficiently.  This system allows administrators, teachers, and students to interact seamlessly through features like getting student information/detail, grade tracking, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VicTorQuest/Student-Management-System.git"
+  },
+  "author": "Victor Okolie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VicTorQuest/Student-Management-System/issues"
+  },
+  "homepage": "https://github.com/VicTorQuest/Student-Management-System#readme"
+}
