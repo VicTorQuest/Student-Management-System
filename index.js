@@ -59,9 +59,10 @@ class User {
     }
 
     // displays the total users
-    static getTotal() {
-        console.log(`Total users: ${User.users.length}`)
-        return 
+    getTotal() {
+        throw new Error("Can't use the method from a base class")
+        // console.log(`Total users: ${User.users.length}`)
+         
     }
 }
 
@@ -149,8 +150,8 @@ class Student extends User {
     }
 
     // displays the total enrolled students
-    static getTotal() {
-        console.log(`Total enrolled students: ${this.students.length}`)
+    getTotal() {
+        console.log(`Total enrolled students: ${Student.students.length}`)
         return
     }
 
@@ -223,7 +224,7 @@ class Tutor extends User {
     }
 
     // get the total number of tutors
-    static getTotal() {
+    getTotal() {
         console.log(`Total tutors: ${Tutor.teachers.length}`)
         return
     }
@@ -272,7 +273,7 @@ class Administrator extends User {
     }
 
     // get the total admins
-    static getTotal() {
+    getTotal() {
         console.log(`Total admins: ${Administrator.administrators.length}`)
         return
     }
@@ -331,13 +332,13 @@ const judicodes = new Tutor(3, 'judicodes', 'judicodes323@gmail.com', true, 'Jos
 learnable.addStudent(3, 'victor001', 'victorokolie2001@gmail.com', false, 'Victor', 'Okolie', 'Intern', 'Web3')
 console.log(`
     `)
-User.getTotal()
+learnable.getTotal()
 console.log(`
     `)
-Student.getTotal()
+quest.getTotal()
 console.log(`
     `)
-Tutor.getTotal()
+judicodes.getTotal()
 console.log(`
     
 `)
